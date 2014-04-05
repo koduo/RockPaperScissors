@@ -154,5 +154,12 @@ namespace RockPaperScissors
                     break;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pres = 0;
+            cres = 0;
+            countstd.Text = pres + " : " + cres;
+        }
     }
 }

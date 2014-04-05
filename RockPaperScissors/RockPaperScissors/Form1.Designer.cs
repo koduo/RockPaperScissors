@@ -41,6 +41,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +59,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.info);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.paperstd);
@@ -130,20 +132,20 @@
             // countstd
             // 
             this.countstd.AutoSize = true;
-            this.countstd.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.countstd.Location = new System.Drawing.Point(7, 30);
+            this.countstd.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.countstd.Location = new System.Drawing.Point(3, 44);
             this.countstd.Name = "countstd";
-            this.countstd.Size = new System.Drawing.Size(27, 32);
+            this.countstd.Size = new System.Drawing.Size(36, 45);
             this.countstd.TabIndex = 1;
             this.countstd.Text = "0";
             // 
             // labelcountstd
             // 
             this.labelcountstd.AutoSize = true;
-            this.labelcountstd.Font = new System.Drawing.Font("Segoe UI Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelcountstd.Location = new System.Drawing.Point(7, 5);
+            this.labelcountstd.Font = new System.Drawing.Font("Segoe UI Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelcountstd.Location = new System.Drawing.Point(3, 5);
             this.labelcountstd.Name = "labelcountstd";
-            this.labelcountstd.Size = new System.Drawing.Size(51, 25);
+            this.labelcountstd.Size = new System.Drawing.Size(58, 30);
             this.labelcountstd.TabIndex = 0;
             this.labelcountstd.Text = "Счет";
             // 
@@ -173,6 +175,16 @@
             // 
             this.timer.Interval = 500;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(67, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 31);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Сброс";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -207,6 +219,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button button1;
     }
 }
 
