@@ -149,7 +149,6 @@ namespace RockPaperScissors
                     rockstd.Enabled = true;
                     paperstd.Enabled = true;
                     scissorsstd.Enabled = true;
-                    label2.Text = "???";
                     timer.Enabled = false;
                     break;
             }
